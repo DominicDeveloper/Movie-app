@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="13dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/movieDate"
+        android:text="20.21.2023"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:id="@+id/movieName"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Qasoskorlar: Into"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/movieAuthors"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="@string/sanjar_soyipov_shukurullo_dadaboyev_bobur_tshamtov"
+        app:layout_constraintTop_toBottomOf="@id/movieName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEdit"
+        app:cornerRadius="6dp"
+        app:layout_constraintTop_toBottomOf="@id/movieAuthors"
+        app:layout_constraintRight_toLeftOf="@id/btnDelete"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/edit"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:backgroundTint="@color/asosiy"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:text="@string/delete"
+        android:id="@+id/btnDelete"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/asosiy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieAuthors"
+        app:cornerRadius="6dp"
+        android:layout_height="40dp"/>
+    <View
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
